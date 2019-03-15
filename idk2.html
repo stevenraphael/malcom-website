@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Stuff for Math</title>
+
+
+	<link rel="stylesheet" href="stuff.css">
+	<style>
+
+		#image {
+	    	line-height: 300px;
+			width: 388px;
+	    	height: 190px;
+			border: 5px solid black;
+			margin: 0 auto;
+	    	background-repeat: no-repeat;
+	    	color: #FFF;
+	    	text-align: center;
+	    	background-color: #8e68ff;
+	    	background-size: 100%;
+	    	margin-bottom: 25px;
+	    	font-size: 150%;
+		}
+
+		img{
+			width: 100%;
+		}
+		h1{
+			text-align: center;
+		}
+		.top{
+			color:green;
+		}
+	</style>
+</head>
+
+<body>
+	<script type="text/javascript">
+		var initialh=50;
+		var initialw=90;
+		function showButton(){
+			img=document.getElementById("clicky");
+			img.style.visibility="visible";
+		}
+		function checkHover(){
+			var button=document.getElementById("clicky");
+			var x = event.clientX;
+			var y = event.clientY;
+			var rect = button.getBoundingClientRect();
+			if(x>rect.left&&x<rect.right&&y<rect.bottom&&y>rect.top){//top<bottom????
+				button.style.visibility="visible";
+			}
+			if(button.style.visibility=="hidden"){
+				initialh+=5;
+				initialw+=5;
+				button.style.height=initialh+"px";
+				button.style.width=initialw+"px";
+			}
+		}
+	</script>
+	<div class="top" style="font-size:10em; text-align:center;">Mathhh</div>
+	<div style="text-align: center;"> Welcome to Steven's Math Website! To continue, find the hidden button.............. (gets easier with every click)</div>
+	<div style="height:5000px;border:10px solid black; padding-left:47em; padding-top:186em;" onclick="checkHover()">
+		<button id="clicky" type="button" style="visibility:hidden; height:50px; width:90px;" href="/idk2">You found it!!!</button>
+	</div>
+
+
+
+
+</body>
+</html>

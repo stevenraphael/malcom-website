@@ -1,0 +1,13 @@
+@keyframes flash {
+  0%   {background-color:red;}
+  25%  {background-color:DeepSkyBlue;}
+  50%  {background-color:blue;}
+  75%  {background-color:LimeGreen;}
+  100% {background-color:red;}
+}
+body {
+
+  animation-name: flash;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
