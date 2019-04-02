@@ -2,37 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, shrink-to-fit=no">
 	<title>Stuff for Math</title>
 
 
 	<link rel="stylesheet" href="stuff.css">
-	<style>
-
-		#image {
-	    	line-height: 300px;
-			width: 388px;
-	    	height: 190px;
-			border: 5px solid black;
-			margin: 0 auto;
-	    	background-repeat: no-repeat;
-	    	color: #FFF;
-	    	text-align: center;
-	    	background-color: #8e68ff;
-	    	background-size: 100%;
-	    	margin-bottom: 25px;
-	    	font-size: 150%;
-		}
-
-		img{
-			width: 100%;
-		}
-		h1{
-			text-align: center;
-		}
-		.top{
-			color:green;
-		}
-	</style>
 </head>
 
 <body>
@@ -48,7 +22,7 @@
 			var x = event.clientX;
 			var y = event.clientY;
 			var rect = button.getBoundingClientRect();
-			if(x>rect.left&&x<rect.right&&y<rect.bottom&&y>rect.top){//top<bottom????
+			if(x>rect.left&&x<rect.right&&y<rect.bottom&&y>rect.top){
 				button.style.visibility="visible";
 			}
 			if(button.style.visibility=="hidden"){
@@ -59,11 +33,14 @@
 			}
 		}
 	</script>
-	<div class="top" style="font-size:10em; text-align:center;">Math</div>
-	<div style="text-align: center;"> Welcome to Steven's Math Website! To continue, find the hidden button.............. (gets easier with every click)</div>
+	<div class="top">Stuck in a Hole</div>
+	<div style="text-align: center;"> Welcome to Steven's Math Website! To continue, find the hidden button.............. (it gets bigger with every click)</div>
 	<div style="height:5000px;border:10px solid black; padding-left:47em; padding-top:186em;" onclick="checkHover()">
-		<button id="clicky" type="button" style="visibility:hidden; height:50px; width:90px;" onclick="location.href='./idk2.html'" >You found it!!!</button>
+		<button id="clicky" type="button" style="visibility:hidden; height:50px; width:90px;" onclick="location.href='hsrbgufjdvngrtbrmnurnhghidhfbgdfgbdiughdrgiudgndriugkj.html'" > <!--what are you doing??-->
+			You found it!!!
+		</button>
 	</div>
+	<div style="text-align:center;">(Also, trying to go back does not work)</div>
 
 
 
