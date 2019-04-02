@@ -67,6 +67,9 @@ h1{
   .top{
     font-size:9em;
   }
+  #final{
+    grid-column:1/3;
+  }
 }
 
 input{
