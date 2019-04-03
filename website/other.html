@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, shrink-to-fit=no">
+	<title>Stuff for Math</title>
+
+
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<script type="text/javascript">
+		var initialh=50;
+		var initialw=90;
+		function showButton(){
+			img=document.getElementById("clicky");
+			img.style.visibility="visible";
+		}
+		function checkHover(){
+			var button=document.getElementById("clicky");
+			var x = event.clientX;
+			var y = event.clientY;
+			var rect = button.getBoundingClientRect();
+			if(x>rect.left&&x<rect.right&&y<rect.bottom&&y>rect.top){
+				button.style.visibility="visible";
+			}
+			if(button.style.visibility=="hidden"){
+				initialh+=5;
+				initialw+=5;
+				button.style.height=initialh+"px";
+				button.style.width=initialw+"px";
+			}
+		}
+	</script>
+	<div class="top">Stuck in a Hole</div>
+	<div style="text-align: center;"> Welcome to Steven's Math Website! To continue, find the hidden button.............. (it gets bigger with every click)</div>
+	<div style="height:5000px;border:10px solid black; padding-left:47em; padding-top:186em;" onclick="checkHover()">
+		<button id="clicky" type="button" style="visibility:hidden; height:50px; width:90px;" onclick="location.href='problems.html'" > <!--what are you doing??-->
+			You found it!!!
+		</button>
+	</div>
+	<div style="text-align:center;">Also, trying to go back does not work</div>
+
+
+
+
+</body>
+</html>
